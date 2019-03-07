@@ -17,7 +17,7 @@ and open the template in the editor.
                 font-size: 20px; 
                 color: white;
             }
-            a {
+            .nav a {
                 background: #cccccc;
                 color: black;
                 padding: 150px 80px;
@@ -37,14 +37,25 @@ and open the template in the editor.
                 color: white;
                 font-size: 30px;
             }
-                        
+            .article a{
+                background: #cccccc;
+                color: black;
+                text-align: center;
+                font-family: serif;
+                display: inline-block;
+                margin: 30px;              
+                width: 350px;
+                font-size: 20px;
+                padding: 15px;
+                
+            }          
         </style>
     </head>
     <body>
         <header>
             <h1 style="color:black; font-size:50px;"> Seán Duggan 118378436</h1>
         </header>
-        <nav> 
+        <div class="nav"> 
                 <!--a button to the cv-->
                 <a href="cv.html">
                       My C.V.  
@@ -58,10 +69,17 @@ and open the template in the editor.
                 <a href="consulting.html">
                     Consulting Company
                 </a>
-        </nav>
-        <article>
+        </div>
+        <div class="article">
             <h3>Assignment</h3>
             <p> This is my website that I have created for my IS1113 project.</p>
-        </article>
+            <br><br>
+            <!--Link to my heroku-->
+            <p>Follow this link to my heroku</p>
+            <a href="is1103118378436.herokuapp.com">is1103118378436.herokuapp.com</a>
+            
+            <!--Link to my github-->
+            
+        </div>
     </body>
 </html>
