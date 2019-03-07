@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <!-- Collapsible code found on https://www.w3schools.com/howto/howto_js_collapsible.asp-->
+        <title>About-Duggan Consulting Ltd.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: #99ccff;
+                font-family: serif;
+            }
+           .nav ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #cccccc;
+                  }
+
+           .nav li {
+                    float: left;
+                  }
+
+           .nav li a {
+                    display: block;
+                    color: black;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                  }
+
+           .nav li a:hover:not(.active) {
+                    background-color: lightcoral;
+                  }
+
+           .nav .active {
+                    background-color: red;
+                  }
+            .collapsible {
+                background-color: #ccffff;
+              color: Black;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+            }
+
+            .active, .collapsible:hover {
+                background-color: #6699ff;
+            }
+
+            .content {
+              padding: 0 18px;
+              display: none;
+              overflow: hidden;
+              background-color: #cccccc;
+            }
+            p {
+                font-family: serif;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+             <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="cv.html">My C.V.</a></li>
+                <li><a href="interests.html">Interests</a></li>
+                <li><a href="consulting.html">Consulting</a></li>
+            </ul> 
+        </div>
+        <div>
+            <h1>About our Services</h1>
+            <p>Click on the name to find out more information </p>
+        </div>
+       
+            <button class="collapsible">Blockchain</button>
+             <div class="content">
+            <p>
+                <!--Found on https://www.cnbc.com/2018/06/18/blockchain-what-is-it-and-how-does-it-work.html-->
+                Blockchain is a digital ledger that securely logs every transaction which has occurred. <br />
+                It is the technology that underpins Bitcoin. It is a peer to peer electronic transaction system. <br />
+                It can't be tampered with or changed retrospectively. Advocates claim that is safer than all other current systems. <br />
+                Due to decentralisation, if one node of the system fails then the whole system does not crash. <br />
+                Due to the high security it is worried that illicit content could be transferred and paid for with Bitcoin. <br />
+                This is a worry for the system and may eventually lead to a reduction in security on payments. <br />
+                It was created by a man named Satoshi Nakamoto whos identity is widely unknown. <br />
+            </p>
+            <a href="https://www.cnbc.com/2018/06/18/blockchain-what-is-it-and-how-does-it-work.html">Click here for more information on Blockchain Technology</a>
+            <br /><br>
+        </div>
+        
+       
+            <button class="collapsible">Autonomous Things</button>
+            <div class="content">
+            <!--Information gathered from https://www.wired.com/2014/10/future-of-artificial-intelligence/-->
+            <p>
+                Are technological developments that bring computers  into the physical environment as autonomous entities without human direction. <br />
+                It allows cheap parallel computation, this is done by he creation of GPUs otherwise known as the General Processing Unit. <br />
+                These GPUs are use by large social media groups to identify friends within photos, without human interaction! <br />
+                Computers are now to able to learn due to artificial intelligence and can soon lead to the introduction of items such as self driving cars. <br />
+                The self-driving car is already being developed by companies such as Google and Tesla.<br />
+                The disadvantage of this is that in the early years of self-driving cars it might lead to an oligarchy.
+            </p>   
+            <a href="https://www.wired.com/2014/10/future-of-artificial-intelligence/">Click here to find more information about Autonomous Things</a>
+            <br /><br>
+        </div>
+        
+        
+            <button class="collapsible">Immersive Experience</button>
+            <div class="content">
+            <!-- Information found from https://www.qualcomm.com/invention/cognitive-technologies/immersive-experiences-->
+            <p>
+                Immersion enhances everyday experiences, making them more realistic and also engaging for the user. <br />
+                This can be found in modern day activities such as playing video games, eg. Playstation VR. <br />
+                This places the user of the system into a realistic setting of where the game is set. <br />
+                In the future we will be able to harness this technology and use it in fields such as Education and Firness. <br />
+                In education in can be used in the subjects of science and mathematics such as walking along the surface of mars for a science lesson. <br />
+                For fitness it can help the boredom and repetitiveness felt by some people while exercising alone by introducing games.
+            </p>
+            <a href="https://www.qualcomm.com/invention/cognitive-technologies/immersive-experiences">Click here to find out more information about Immersive Experience</a>
+            <br /><br>
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+        </script>
+    </body>
+</html>
