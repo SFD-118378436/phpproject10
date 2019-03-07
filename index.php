@@ -79,9 +79,9 @@ and open the template in the editor.
                  <tr> 
                  <p>Follow this link to my heroku</p>
             <a href="https://is1113118378436.herokuapp.com">is1103118378436.herokuapp.com</a>
-            <p> Follow this link to my Github</p>
             <!--Link to my github-->
             <a href="https://github.com/SFD-118378436/phpproject1000/graphs/commit-activity"> GitHub </a>
+            <!--The link to github is different on heroku as unable to push the files more than once but data should be similar-->
             </tr>
             </table>
            

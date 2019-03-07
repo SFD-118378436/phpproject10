@@ -49,7 +49,7 @@ $_SESSION['txtTotal'] = $totalValue;
             p {
                 font-family: serif;
                 font-size: 15px;
-                
+           /*code for button design*/     
             }
             .button3 {
                 background: #0069d9;
@@ -106,6 +106,7 @@ $_SESSION['txtTotal'] = $totalValue;
         </center>
         <br/>
             <center>
+                <!--All the textboxes-->
                  <table cellspacing="10">
             <tr>
                     <td><b></b></td>
@@ -143,6 +144,7 @@ $_SESSION['txtTotal'] = $totalValue;
         </div>
         
             <script type="text/javascript">
+                //function for calculating each price
                 function calcSub(){
                     //Assigning variables to the values
                     var subAmount = parseFloat(document.getElementById('txtSubTot').value);
