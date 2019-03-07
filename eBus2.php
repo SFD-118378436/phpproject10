@@ -82,7 +82,7 @@ $_SESSION['txtEmail'] = $emailAddress
             </ul> 
         </nav>
         <div class="form">
-            <form name="Details" method="post" action="Ebus3.php">
+            <form name="Details" method="post" action="ebus3.php">
                 <center>
                     <table>
                         <tr>
