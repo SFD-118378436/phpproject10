@@ -75,10 +75,16 @@ and open the template in the editor.
             <p> This is my website that I have created for my IS1113 project.</p>
             <br><br>
             <!--Link to my heroku-->
-            <p>Follow this link to my heroku</p>
-            <a href="is1103118378436.herokuapp.com">is1103118378436.herokuapp.com</a>
-            
+            <table>
+                 <tr> 
+                 <p>Follow this link to my heroku</p>
+            <a href="https://is1113118378436.herokuapp.com">is1103118378436.herokuapp.com</a>
+            <p> Follow this link to my Github</p>
             <!--Link to my github-->
+            <a href="https://github.com/SFD-118378436/is1113118378436/graphs/commit-activity"> GitHub </a>
+            </tr>
+            </table>
+           
             
         </div>
     </body>
